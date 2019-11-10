@@ -145,3 +145,15 @@ Client
 ```bash
 npm start
 ```
+
+### Subscription
+
+```garphql
+subscription {
+  messageAdded {
+    id
+    from
+    text
+  }
+}
+```
