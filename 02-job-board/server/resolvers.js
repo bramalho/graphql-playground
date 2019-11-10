@@ -17,7 +17,11 @@ const Job = {
 }
 
 const Mutation = {
-    createJob: (root, {input}) => {
+    createJob: (root, {input}, {user}) => {
+        if (!user) {
+            throw new Error("Unauthorized")
+        }
+
         const jobId = db.jobs.create(input);
         return db.jobs.get(jobId)
     }

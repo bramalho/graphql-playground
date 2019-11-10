@@ -26,7 +26,9 @@ Client
 npm start
 ```
 
-Queries
+### Queries
+
+- Get Jobs
 
 ```graphql
 query {
@@ -40,6 +42,8 @@ query {
   }
 }
 ```
+
+- Get Job
 
 ```graphql
 query JobQuery($id: ID!) {
@@ -55,11 +59,15 @@ query JobQuery($id: ID!) {
 }
 ```
 
+Variables
+
 ```json
 {
  "id": "J-ONE"
 }
 ```
+
+- Get Company
 
 ```graphql
 query ComapnyQuery($id: ID!) {
@@ -75,13 +83,17 @@ query ComapnyQuery($id: ID!) {
 }
 ```
 
+Variables
+
 ```json
 {
  "id": "C-ONE"
 }
 ```
 
-Mutations
+### Mutations
+
+- Create Job
 
 ```graphql
 mutation CreateJob($input: CreateJobInput) {
@@ -97,6 +109,8 @@ mutation CreateJob($input: CreateJobInput) {
 }
 ```
 
+Variables
+
 ```json
 {
  "input": {
@@ -104,5 +118,13 @@ mutation CreateJob($input: CreateJobInput) {
    "title": "New Job",
    "description": "This is a new Job"
  }
+}
+```
+
+Headers
+
+```json
+{
+  "authorization": "Bearer <YOUR TOKEN>"
 }
 ```
