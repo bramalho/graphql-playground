@@ -1,0 +1,20 @@
+[
+  {
+    "id": "U-ONE",
+    "email": "one@company-one.com",
+    "password": "pass123",
+    "companyId": "C-ONE"
+  },
+  {
+    "id": "U-TWO",
+    "email": "two@company-two.com",
+    "password": "pass123",
+    "companyId": "C-TWO"
+  },
+  {
+    "id": "U-THREE",
+    "email": "three@company-three.com",
+    "password": "pass123",
+    "companyId": "C-THREE"
+  }
+]

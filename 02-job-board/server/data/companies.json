@@ -1,0 +1,17 @@
+[
+  {
+    "id": "C-ONE",
+    "name": "Company One",
+    "description": "This is the Company One"
+  },
+  {
+    "id": "C-TWO",
+    "name": "Company Two",
+    "description": "This is the Company Two"
+  },
+  {
+    "id": "C-THREE",
+    "name": "Company Three",
+    "description": "This is the Company Three"
+  }
+]
