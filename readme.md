@@ -114,7 +114,6 @@ Variables
 ```json
 {
  "input": {
-  //  "companyId": "C-ONE",
    "title": "New Job",
    "description": "This is a new Job"
  }
