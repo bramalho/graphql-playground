@@ -48,14 +48,18 @@ query {
 ```graphql
 query JobQuery($id: ID!) {
   job(id: $id) {
-    id
-    title
-    company {
-      id
-      name
-    }
-    description
+    ...JobDetail
   }
+}
+
+fragment JobDetail on Job {
+  id
+  title
+  company {
+    id
+    name
+  }
+  description
 }
 ```
 
