@@ -10,7 +10,7 @@ type Mutation {
         company: ID,
         title: String,
         description: String
-    ): ID
+    ): Job
 }
 
 type Company {
