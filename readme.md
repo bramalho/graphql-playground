@@ -26,6 +26,8 @@ Client
 npm start
 ```
 
+Queries
+
 ```graphql
 query {
   jobs {
@@ -37,7 +39,9 @@ query {
     }
   }
 }
+```
 
+```graphql
 query JobQuery($id: ID!) {
   job(id: $id) {
     id
@@ -49,7 +53,15 @@ query JobQuery($id: ID!) {
     description
   }
 }
+```
 
+```json
+{
+ "id": "J-ONE"
+}
+```
+
+```graphql
 query ComapnyQuery($id: ID!) {
   company(id: $id) {
     id
@@ -60,5 +72,37 @@ query ComapnyQuery($id: ID!) {
       title
     }
   }
+}
+```
+
+```json
+{
+ "id": "C-ONE"
+}
+```
+
+Mutations
+
+```graphql
+mutation CreateJob($input: CreateJobInput) {
+  job: createJob(input: $input) {
+    id
+    title
+    company {
+      id
+      name
+    }
+    description
+  }
+}
+```
+
+```json
+{
+ "input": {
+   "companyId": "C-ONE",
+   "title": "New Job",
+   "description": "This is a new Job"
+ }
 }
 ```
